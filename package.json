@@ -5,6 +5,9 @@
   "repository": "git@github.com:piotr-rajtar/express-restapi.git",
   "author": "Piotr Rajtar <piotrek.rajtar@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
