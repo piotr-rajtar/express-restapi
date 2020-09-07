@@ -27,6 +27,7 @@ exports.addSeat = async (req, res) => {
   try {
     const newSeat = new Seat({ day: day, seat: seat, client: client, email: email });
     await newSeat.save();
+    req.io.emit('seatsUpdated', await Seat.find());
     res.json({ message: 'OK' });
   }
   catch(err) {
