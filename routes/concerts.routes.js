@@ -1,7 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db');
-const { v4: uuidv4 } = require('uuid');
 const Concert = require('../models/concert.model');
 
 router.route('/concerts').get( async (req, res) => {
